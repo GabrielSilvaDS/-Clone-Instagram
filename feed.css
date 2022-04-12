@@ -1,0 +1,192 @@
+*{margin: 0;padding: 0;box-sizing: border-box;}
+body{
+    background-color: #FAFAFA;
+    font-family: 'Roboto', sans-serif;
+}
+/*HEADER*/
+header{
+    box-sizing: border-box;
+    box-shadow: 0px 0px 0px 2px rgb(214, 214, 214);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #f3f3f3;
+    border: 0 solid #000;
+    box-sizing: border-box; 
+    position: relative;
+}
+#insta{
+    margin-left: 33.5%;
+    width: 50%;
+}
+#chat{
+    margin-left: 5%;
+    width: 80px;
+}
+/*MAIN*/
+main{
+    display: grid;
+    position: relative; 
+}
+#photo-gabriel{
+    border-radius: 100%;
+    height: 100%;
+    margin-left: 25px;
+}
+#dots{
+    position: absolute;
+    font-size: 35px;
+    top: 11%;
+    left: 92%;
+}
+#profile{
+    display: flex;
+    flex-direction: row;
+    margin-top: 8%;
+}
+h1{
+    margin-top: 5%;
+    margin-left: 5%;
+    font-weight: bold;
+    font-size: 35px;
+}
+#viego{
+    margin-top: 3%;
+    width: 100%;
+}
+div.icons-post{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#like{
+    margin-left: 10px;
+    width: 10%;
+}
+#comments{
+    width: 7%;
+    margin-left: 3%;
+}
+#share{
+    width: 7%;
+    margin-left: 5%;
+}
+#save{
+    width: 7%;
+    margin-left: 59%;
+}
+#likes{
+    display: flex;
+    flex-direction: row;
+    margin-top: 3%;
+}
+#heart-likes{
+    margin-left: 40px;
+    font-size: 35px;
+}
+h4#gabrielsilva{
+    font-size: 35px;
+    margin-left: 43px;
+}
+h3{
+    margin-left: 10px;
+    font-size: 30px;
+}
+h2{
+    font-weight: lighter;
+    font-size: 35px;
+    margin-left: 20px;
+}
+#description{
+    display: flex;
+    flex-direction: row;
+    margin-top: 3%;
+}
+#main-lol{
+    margin-left: 10px;
+    color: blue;
+}
+/*NAV*/
+nav div#footer{
+    box-sizing: border-box;
+    box-shadow: 0px 0px 0px 2px rgb(214, 214, 214);
+    display: flex;
+    flex-direction: row;
+    margin-top: 15%;
+    background-color: #f3f3f3;
+    text-align: bottom;
+}
+#home{
+    height: 100px;
+    margin-left: 15px;
+}
+#search{
+    height: 100px;
+    margin-left: 110px;
+}
+#publish{
+    height: 100px;
+    margin-left: 110px;
+}
+#notifications{
+    height: 100px;
+    margin-left: 110px;
+}
+img#notifications:hover{
+    background-color: #4d4d4f;
+}
+#profile-user{
+    height: 100px;
+    margin-left: 300px;
+}
+/*DIV FOOTER*/
+#commentspop{
+    color: white;
+}
+#heartpop{
+    color: white;
+}
+#people{
+    color: white;
+}
+.wrapper{
+    position: absolute;
+}
+.wrapper .icon .tooltip{
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    background: #c52a2a;
+    color: #c52a2a;
+    padding: 10px 18px;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 25px;
+    opacity: 0;
+    pointer-events: none;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+    transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.wrapper .icon:hover .tooltip{
+    top: -90px;
+    opacity: 1;
+    pointer-events: auto;
+}
+.icon .tooltip:before{
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    background: #c52a2a;
+    left: 50%;
+    bottom: -6px;
+    transform: translateX(-50%) rotate(45deg);
+    transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.wrapper .icon:hover{
+    color: #c52a2a;
+}
+.wrapper .icon:hover,
+.wrapper .icon:hover .tooltip{
+    text-shadow: 0px -1px 0px rgba(0,0,0,0.4);
+}
